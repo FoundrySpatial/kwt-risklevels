@@ -64,7 +64,7 @@ background: #3074a4;
         container: 'map', // container ID
         style: 'mapbox://styles/mapbox/streets-v11', // style URL
         center: [-120, 49.5], // starting position [lng, lat]
-        zoom: 9 // starting zoom
+        zoom: 8.01 // starting zoom
     });
 //	map.on('load', () => {
 // Add a data source containing GeoJSON data.
