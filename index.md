@@ -40,7 +40,7 @@ map.addLayer({
 'paint': {
 'line-color': [
 	'match',
-	['get', 'rl_01'
+	['get', 'rl_01']
 	"1",
 	'#0080fa', 
 	2,
