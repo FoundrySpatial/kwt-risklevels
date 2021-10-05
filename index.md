@@ -63,7 +63,7 @@ background: #3074a4;
     	const map = new mapboxgl.Map({
         container: 'map', // container ID
         style: 'mapbox://styles/mapbox/streets-v11', // style URL
-        center: [-120, 49.5], // starting position [lng, lat]
+        center: [-116, 49.5], // starting position [lng, lat]
         zoom: 8.01 // starting zoom
     });
 //	map.on('load', () => {
