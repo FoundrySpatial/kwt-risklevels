@@ -41,11 +41,11 @@ map.addLayer({
 'line-color': [
 	'match',
 	['get', 'rl_01']
-	"1",
+	'1',
 	'#0080fa', 
-	2,
+	'2',
 	'#FFFF00',
-	3,
+	'3',
 	'#FF0000'
 	]
 }
