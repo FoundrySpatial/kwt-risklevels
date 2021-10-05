@@ -25,12 +25,12 @@ body { margin: 0; padding: 0; }
 // Add a data source containing GeoJSON data.
 map.addSource('risk-levels', {
 'type': 'geojson',
-'data': 'https://
+'data': 'https://'
 });
  
-// Add a new layer to visualize the polygon.
+// Add a new layer to visualize the lines.
 map.addLayer({
-'id': 'Jan',
+'id': 'rl-01',
 'type': 'line',
 'source': 'risk-levels', // reference the data source
 'layout': {
@@ -38,20 +38,18 @@ map.addLayer({
 	'line-cap': 'round'
 	},
 'paint': {
-'line-color': '#0080ff', // blue color fill
-'line-opacity': 0.5
+'line-color': [
+	'match',
+	['get', 'rl_01'
+	'1',
+	'#0080ff', 
+	'2',
+	'',
+	'3',
+	''
+	]
 }
 });
-// Add a black outline around the polygon.
-map.addLayer({
-'id': 'outline',
-'type': 'line',
-'source': 'maine',
-'layout': {},
-'paint': {
-'line-color': '#000',
-'line-width': 3
-}
 });
 });
 </script>
