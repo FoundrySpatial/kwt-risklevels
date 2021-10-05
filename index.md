@@ -42,7 +42,7 @@ map.addLayer({
 	'match',
 	['get', 'rl_01'
 	"1",
-	'#0080ff', 
+	'#0080fa', 
 	2,
 	'#FFFF00',
 	3,
