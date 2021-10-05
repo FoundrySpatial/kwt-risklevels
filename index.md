@@ -62,7 +62,7 @@ background: #3074a4;
 	mapboxgl.accessToken = 'pk.eyJ1IjoiZm91bmRyeXNwYXRpYWwiLCJhIjoiNzk1YTU3OTZmMjZiMzQ3YzM5YzIwODNiNjhkM2MzMDQifQ.sfy6Aux5O-BBqbSVNaec1A';
     	const map = new mapboxgl.Map({
         container: 'map', // container ID
-        style: 'mapbox://styles/mapbox/streets-v11', // style URL
+        style: 'mapbox://styles/foundryspatial/ckuenzzg50t8818mssrdk8jol', // style URL
         center: [-116, 49.5], // starting position [lng, lat]
         zoom: 8.01 // starting zoom
     });
