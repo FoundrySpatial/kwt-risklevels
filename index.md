@@ -12,6 +12,51 @@ body { margin: 0; padding: 0; }
 </style>
 </head>
 <body>
+	<style>
+#menu {
+background: #fff;
+position: absolute;
+z-index: 1;
+top: 10px;
+right: 10px;
+border-radius: 3px;
+width: 120px;
+border: 1px solid rgba(0, 0, 0, 0.4);
+font-family: 'Open Sans', sans-serif;
+}
+ 
+#menu a {
+font-size: 13px;
+color: #404040;
+display: block;
+margin: 0;
+padding: 0;
+padding: 10px;
+text-decoration: none;
+border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+text-align: center;
+}
+ 
+#menu a:last-child {
+border: none;
+}
+ 
+#menu a:hover {
+background-color: #f8f8f8;
+color: #404040;
+}
+ 
+#menu a.active {
+background-color: #3887be;
+color: #ffffff;
+}
+ 
+#menu a.active:hover {
+background: #3074a4;
+}
+</style>
+ 
+<nav id="menu"></nav>
 <div id="map"></div>
 <script>
 	mapboxgl.accessToken = 'pk.eyJ1IjoiZm91bmRyeXNwYXRpYWwiLCJhIjoiNzk1YTU3OTZmMjZiMzQ3YzM5YzIwODNiNjhkM2MzMDQifQ.sfy6Aux5O-BBqbSVNaec1A';
@@ -21,28 +66,28 @@ body { margin: 0; padding: 0; }
         center: [-115, 53], // starting position [lng, lat]
         zoom: 9 // starting zoom
     });
-	map.on('load', () => {
+//	map.on('load', () => {
 // Add a data source containing GeoJSON data.
-map.addSource('risk-levels', {
-'type': 'geojson',
-'data': 'https://foundryspatial.github.io/kwt-risklevels/risk_levels.geojson'
-});
+//map.addSource('risk-levels', {
+//'type': 'geojson',
+//'data': 'https://foundryspatial.github.io/kwt-risklevels/risk_levels.geojson'
+//});
  
 // Add a new layer to visualize the lines.
-map.addLayer({
-'id': 'rl-01',
-'type': 'line',
-'source': 'risk-levels', // reference the data source
-'layout': {
-	'line-join': 'round',
-	'line-cap': 'round'
-	},
-'paint': {
-'line-color': '#FF0000'
-}
-});
-});
-});
+//map.addLayer({
+//'id': 'rl-01',
+//'type': 'line',
+//'source': 'risk-levels', // reference the data source
+//'layout': {
+//	'line-join': 'round',
+//	'line-cap': 'round'
+//	},
+//'paint': {
+//'line-color': '#FF0000'
+//}
+//});
+//});
+//});
 </script>
 
 </body>
