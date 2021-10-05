@@ -18,14 +18,14 @@ body { margin: 0; padding: 0; }
     	const map = new mapboxgl.Map({
         container: 'map', // container ID
         style: 'mapbox://styles/mapbox/streets-v11', // style URL
-        center: [-74.5, 40], // starting position [lng, lat]
+        center: [-115, 53], // starting position [lng, lat]
         zoom: 9 // starting zoom
     });
 	map.on('load', () => {
 // Add a data source containing GeoJSON data.
 map.addSource('risk-levels', {
 'type': 'geojson',
-'data': 'https://'
+'data': 'https://foundryspatial.github.io/kwt-risklevels/risk_levels.geojson'
 });
  
 // Add a new layer to visualize the lines.
