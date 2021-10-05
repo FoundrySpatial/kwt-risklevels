@@ -38,16 +38,7 @@ map.addLayer({
 	'line-cap': 'round'
 	},
 'paint': {
-'line-color': [
-	'match',
-	['get', 'rl_01']
-	1,
-	'#0080fa', 
-	2,
-	'#FFFF00',
-	3,
-	'#FF0000'
-	]
+'line-color': '#FF0000'
 }
 });
 });
