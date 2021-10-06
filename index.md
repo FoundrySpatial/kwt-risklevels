@@ -91,7 +91,7 @@ background: #3074a4;
 	// After the last frame rendered before the map enters an "idle" state.
 map.on('idle', () => {
 // If these two layers were not added to the map, abort
-if (!map.getLayer('rm-01') || !map.getLayer('rm-02')) {
+if (!map.getLayer('rm-01') || !map.getLayer('rm-02') || !map.getLayer('rm-03') || !map.getLayer('rm-04') || !map.getLayer('rm-05') || !map.getLayer('rm-06') || !map.getLayer('rm-07') || !map.getLayer('rm-08') || !map.getLayer('rm-09') || !map.getLayer('rm-10') || !map.getLayer('rm-11') || !map.getLayer('rm-12')) {
 return;
 }
  
