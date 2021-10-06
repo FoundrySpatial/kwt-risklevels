@@ -96,7 +96,7 @@ return;
 }
  
 // Enumerate ids of the layers.
-const toggleableLayerIds = ['rm-01', 'rm-02'];
+const toggleableLayerIds = ['rm-01', 'rm-02', 'rm-03', 'rm-04', 'rm-05', 'rm-06', 'rm-07', 'rm-08', 'rm-09', 'rm-10', 'rm-11', 'rm-12'];
  
 // Set up the corresponding toggle button for each layer.
 for (const id of toggleableLayerIds) {
