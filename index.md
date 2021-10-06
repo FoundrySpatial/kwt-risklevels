@@ -64,7 +64,9 @@ background: #3074a4;
         container: 'map', // container ID
         style: 'mapbox://styles/foundryspatial/ckuenzzg50t8818mssrdk8jol', // style URL
         center: [-116, 49.5], // starting position [lng, lat]
-        zoom: 8.01 // starting zoom
+        zoom: 8.01, // starting zoom
+	minZoom: 8,
+	maxZoom: 15
     });
 //	map.on('load', () => {
 // Add a data source containing GeoJSON data.
