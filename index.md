@@ -68,31 +68,9 @@ background: #3074a4;
 	minZoom: 8,
 	maxZoom: 15
     });
-//	map.on('load', () => {
-// Add a data source containing GeoJSON data.
-//map.addSource('risk-levels', {
-//'type': 'geojson',
-//'data': 'https://foundryspatial.github.io/kwt-risklevels/risk_levels.geojson'
-//});
- 
-// Add a new layer to visualize the lines.
-//map.addLayer({
-//'id': 'rl-01',
-//'type': 'line',
-//'source': 'risk-levels', // reference the data source
-//'layout': {
-//	'line-join': 'round',
-//	'line-cap': 'round'
-//	},
-//'paint': {
-//'line-color': '#FF0000'
-//}
-//});
-//});
-//});
-	// After the last frame rendered before the map enters an "idle" state.
+// After the last frame rendered before the map enters an "idle" state.
 map.on('idle', () => {
-// If these two layers were not added to the map, abort
+// If these layers were not added to the map, abort
 if (!map.getLayer('rm-01') || !map.getLayer('rm-02') || !map.getLayer('rm-03') || !map.getLayer('rm-04') || !map.getLayer('rm-05') || !map.getLayer('rm-06') || !map.getLayer('rm-07') || !map.getLayer('rm-08') || !map.getLayer('rm-09') || !map.getLayer('rm-10') || !map.getLayer('rm-11') || !map.getLayer('rm-12')) {
 return;
 }
@@ -112,7 +90,7 @@ const link = document.createElement('a');
 link.id = id;
 link.href = '#';
 link.textContent = id;
-link.className = 'active';
+link.className = '';
  
 // Show or hide layer when the toggle is clicked.
 link.onclick = function (e) {
